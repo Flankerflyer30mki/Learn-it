@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+
+        }
+        .nav-container{
+            margin-bottom: 40px;
+        }
+        h2{
+            margin-bottom: 10px;
+
+        }
+        .nav1{
+            background-color: #484848;
+            padding: 10px;
+
+        }
+        .nav1 ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav1 li{
+            display: inline;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color: #fff;
+            background-color: #d45b04;
+            padding: 5px 15px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .nav1 a::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #0a65c7;
+            z-index:-1;
+            transition: height 0.3s ease-in;
+        }
+        .nav1 a:hover::after{
+            height: 100%;
+        }
+        .nav1 a:hover{
+            color: #fff;
+            z-index: 1;
+        }
+        .nav1 .login-btn{
+            background-color: #71799a;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            cursor: crosshair;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <h2>Variation 1: Horizontal with underlime effect</h2>
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h2>Variation 2: Vertical with underlime effect</h2>
+        <nav class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                
+            </ul>
+            <button class="login-btn">Login</button>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h2>Variation 3: Horizontal with dropdown</h2>
+        <nav class="nav3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">our story</a>
+                        <a href="#">team</a>
+                        <a href="#">contact</a>
+                    </div>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><button class="login-btn">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
