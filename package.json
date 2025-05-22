@@ -1,0 +1,19 @@
+{
+  "name": "learn-it",
+  "version": "1.0.0",
+  "description": "all learning stuff will be published here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.7",
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "keywords": []
+}
